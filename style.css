@@ -1,0 +1,95 @@
+header {
+    display: flex;
+}
+.Pimage {
+    width: 100px;
+    height: auto;
+}
+.Pimage img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid cyan;
+}
+.profile {
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.profile .user{
+    position: relative;
+}
+.container  {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    border: 2px solid rgb(8, 160, 160);
+    padding: 25px;
+    top: 12vh;
+    border-radius: 5px;
+}
+.content {
+    font-size: 29px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+.stats{
+    display: flex;
+    float: right;
+    position: relative;
+    top: -20px;
+}
+.retweets {
+    margin-right: 20px;
+}
+.likes {
+    margin-right: 20px;
+}
+@media (max-width:500px) {
+    .container {
+        max-width: 100%;
+        padding: 10x;
+    }
+    .Pimage  {
+        width: 100px;
+        height: auto;
+        float: left;
+    }
+.Pimage img {
+    width: 100%;
+}
+    
+    .profile {
+        width: 100%;
+        font-size: 9px;
+        float: right;
+        margin: auto;
+        position: relative;
+        left: 15px;
+    }
+ .content p {
+     font-size: 15px;
+     text-align: justify;
+
+ }
+   .stats {
+       font-size: 11px;
+       display: flex;
+       width: 100%;
+       position: relative;
+       top: 5px;
+   }
+}
+
+
+@media (max-width:850px) {
+    .container {
+        margin: auto;
+       width: auto;
+    }
+    .content p {
+        height: auto;
+    }
+
+}
